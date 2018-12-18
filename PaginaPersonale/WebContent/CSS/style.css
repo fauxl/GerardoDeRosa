@@ -1,0 +1,229 @@
+body {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 100%;
+	margin: 0;
+	color: black;
+}
+
+.icon {
+	display: none;
+}
+
+header {
+	color: #f2f2f2;
+	background-image: url("../Images/computer.jpg");
+	background-size: 100%;
+	background-position: bottom;
+	padding-top: 8%;
+	padding-bottom: 7%;
+	text-align: center;
+}
+
+nav {
+	padding-top: 1%;
+	margin-top: -1%;
+	padding-bottom: 1%;
+	overflow: hidden;
+	background-color: #000000;
+	width: 100%;
+}
+
+nav a {
+	padding-left: 3%;
+	padding-right: 3%;
+	text-decoration: none;
+	color: white;
+}
+
+nav a:HOVER {
+	color: #628aa4;
+}
+
+#foto {
+	margin-bottom: -13%;
+	margin-left: 10%;
+}
+
+#personal {
+	padding-left: 4%;
+}
+
+#descrizione {
+	padding-left: 4%;
+	padding-right: 4%;
+}
+
+img#descrizione {
+	display: inline;
+	margin-bottom: 3%;
+	float: left;
+}
+
+#lan {
+	padding-left: 4%;
+	padding-right: 4%;
+	padding-top: 2%
+}
+
+img#lan {
+	width: 8%;
+}
+
+#languages {
+	margin-left: 15%;
+	margin-right: 15%;
+	text-decoration: none;
+}
+
+#contacts {
+	padding-top: 0.5%;
+	margin-left: 10%;
+	margin-right: 10%;
+	text-decoration: none;
+}
+
+#cont {
+	padding-left: 2%;
+	padding-right: 2%;
+	padding-bottom: 2%;
+	padding-top: 3%;
+}
+
+img#cont {
+	width: 4%;
+}
+
+img#descrizione {
+	width: 18%;
+}
+
+footer {
+	font-size: 15px;
+	margin-top: 4%;
+	padding-top: 0.5%;
+	padding-bottom: 0.5%;
+	color: #f2f2f2;
+	background-color: #000000;
+	text-align: center;
+}
+
+#life {
+	margin-left: 13%;
+	margin-right: 13%;
+	margin-top: 4%;
+	margin-bottom: 8%;
+	text-decoration: none;
+	text-decoration: none;
+}
+
+h3 {
+	font-weight: bolder;
+	margin: 0;
+	margin-bottom: 8%;
+}
+
+h2 {
+	margin: 0;
+}
+
+h1 {
+	font-size: 330%;
+	margin: 0;
+	margin-bottom: 1%;
+	text-align: center;
+	text-decoration: none;
+}
+
+aside a {
+	text-decoration: none;
+	color: white;
+}
+
+@media screen and (max-width: 1285px) {
+	nav a {
+		padding-left: 3.5%;
+		padding-right: 3.5%;
+	}
+}
+
+@media screen and (max-width: 1020px) {
+	img#descrizione {
+		width: 30%;
+		height: 30%;
+	}
+	img#cont {
+		width: 6%;
+		height: 6%;
+	}
+	img#lan {
+		width: 8%;
+		height: 8%;
+	}
+}
+
+@media screen and (max-width: 884px) {
+	aside {
+		display: block;
+		width: 96%;
+		margin: 0;
+		padding-bottom: 2%;
+	}
+	nav a {
+		padding-left: 2%;
+		padding-right: 2%;
+	}
+	img#lan {
+		width: 9%;
+		height: 9%;
+	}
+}
+
+@media screen and (max-width: 520px) {
+	nav a {
+		padding-left: 6%;
+		padding-right: 6%;
+	}
+	header {
+		background-image: url("../Images/computer.jpg");
+		background-size: 220%;
+		padding-top: 15%;
+		padding-bottom: 25%;
+	}
+	nav {
+		padding-top: 3%;
+		padding-bottom: 3.5%;
+	}
+	h1 {
+		font-size: 200%;
+		margin: 0;
+		margin-bottom: 1%;
+		text-align: center;
+		text-decoration: none;
+	}
+	img#descrizione {
+		width: 90%;
+		padding-bottom: 4%;
+	}
+	#descrizione {
+		padding-top: 3%;
+	}
+	img#cont {
+		width: 15%;
+	}
+	img#lan {
+		width: 30%;
+	}
+	#lan {
+		padding-left: 8%;
+		padding-right: 8%;
+		padding-top: 4%
+	}
+	#cont {
+		padding-left: 4%;
+		padding-right: 4%;
+		padding-top: 5%;
+	}
+	#contacts {
+		padding-top: 2%;
+	}
+}
