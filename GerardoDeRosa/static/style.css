@@ -24,6 +24,8 @@ hr {
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
+
+
   background-size: cover;
   width: 100%;
   margin-bottom: 4%;
@@ -237,7 +239,7 @@ img#lan {
 img#cont {
 	width: 4%;
 }
-p#pdes {
+.pdes {
     text-align: center;
     padding-bottom: 1%;
 }
@@ -436,6 +438,11 @@ div#proj {
       color: black;
     }
 
+#proj2{
+display:none}
+
+#proj{
+display:block}
 
     .slick-slide {
       transition: all ease-in-out .3s;
@@ -450,11 +457,25 @@ div#proj {
       opacity: 1;
     }
 
+
+.slider {
+        width: 80%;
+        margin: 2% auto ;
+    }
+
+    .slick-slide {
+      margin: 0px 20px;
+    }
+
+    .slick-slide img {
+      width: 100%;
+    }
 @media screen and (max-width: 1285px) {
-	nav a {
-		padding-left: 3.5%;
-		padding-right: 3.5%;
-	}
+
+img#descrizione {
+    width: 20%;
+    padding-right: 10%;
+}
 }
 
 @media screen and (max-width: 1020px) {
@@ -462,6 +483,17 @@ div#proj {
 		width: 30%;
 		height: 30%;
 	}
+	.container {
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+.worked {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+h2#h2par {margin-bottom: 4%;margin-top: 8%;}
+
 	img#cont {
 		width: 6%;
 		height: 6%;
@@ -488,11 +520,93 @@ div#proj {
 		height: 9%;
 	}
 }
-@media screen and (max-width: 520px) {
-	nav a {
-		padding-left: 6%;
-		padding-right: 6%;
+
+
+@media (max-width: 770px)  {
+
+	html{
+    font-size:smaller;
 	}
+
+#h2par{
+	font-size:100%;
+}
+#h2par{
+	font-size:100%;
+}
+
+#h2par3{
+	font-size:xx-large;
+}
+div#firstcol {
+    font-size: smaller;
+}
+
+div#secondcol {
+    font-size: smaller;
+}
+h3{
+    font-size:small;
+}
+
+
+	nav a {
+		/* padding-left: 6%; */
+		/* padding-right: 6%; */
+		/* padding: 7% 0 7% 0%; */
+	}
+	nav {
+	border: 0px;
+	/* background-color: #797979; */
+	position: absolute;
+	/* top: 0; */
+	/* left: 35%; */
+	/* padding-left: 5%; */
+	/* padding-right: 12%; */
+	text-align: center;
+	right: 0;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	z-index: 999;
+	}
+
+
+		.sticky {
+    top: 0;
+    position: fixed;
+}
+
+	nav > li {
+	  /* display: block; */
+	  /* float: none; */
+	  /* width: 100%; */
+	  /* padding:0; */
+	  /* height: 80px; */
+	  }
+a.scroll-down{right:0;
+height:auto;
+top: 1;width:100%;}
+
+nav > li a {text-align: center;padding: 4%;height: fit-content;/* width: 100%; */font-weight: 600;color: #FFFFFF;}
+nav > li {
+    height: fit-content;
+    padding: 1%;
+    display:none;
+}
+i.fas.fa-chevron-down {
+    font-size: xx-large;
+    animation: pulse 2s 3s ease-out infinite;
+    padding: 2%;
+    position: initial;
+    bottom: 5vh;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 10;
+    color: white;
+}
+a.icon{display:block;padding: 4% 10% 4% 0;background-color: #797979;/* border-top: #273d52 solid; */border-bottom: #ffffff solid 1px;font-size: x-large;text-align:right;}
+
 	div#firstcol {
     display: inline-grid;
     width: 39%;
@@ -522,6 +636,7 @@ div#secondcol {
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 2%;
+    z-index: -1;
 }
 .row {
     display: grid;
@@ -531,8 +646,8 @@ div#secondcol {
 
 	#background {
 		/* background-image: url("static/Images/background.jpg"); */
-		height: initial;
 		background-position: center;
+		height: 107vh;
 		background-attachment: fixed;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -540,12 +655,16 @@ div#secondcol {
 		/* background-size: 220%; */
 		background-position: center;
 		/* padding-top: 15%; */
+		margin-bottom: 0px;
+		padding: 0px;
 		/* padding-bottom: 25%; */
 	}
 	nav {
-		padding-top: 3%;
-		padding-bottom: 3.5%;
+		/* padding-top: 3%; */
+		/* padding-bottom: 3.5%; */
 	}
+
+	#logon {padding-top: 55%;padding-left: 10%;padding-right: 10%;padding-bottom: 70%;}
 	h1 {
 		font-size: 200%;
 		margin: 0;
@@ -581,13 +700,7 @@ div#secondcol {
 	#contacts {
 		padding-top: 2%;
 	}
-}
 
-@media screen and (max-width: 520px) {
-	nav a {
-		padding-left: 6%;
-		padding-right: 6%;
-	}
 
 .col-md-6 {
     display: table-cell;
@@ -604,4 +717,30 @@ div#secondcol {
     padding-top: 1%;
     width: 100%;
 }
+a.scroll-down {
+    right: 0;
+    padding: 1% 0 1% 0;
+    height: auto;
+    top: 1;
+    width: 100%;
+}
+#proj2{
+display:block}
+
+#proj{
+display:none}
+
+
+hr {
+    width: 70%;
+}
+
+#show{
+visability:hidden;
+}
+
+
+
+}
+
 

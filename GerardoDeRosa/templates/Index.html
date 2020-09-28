@@ -50,30 +50,49 @@
 		</div>
 
 	<nav id="myTopnav" class="topnav">
-		<a href="javascript:void(0);" class="icon" onclick="myFunction()">MENU
+
+<a href="javascript:void(0);" class="icon" onclick="menu()">
 			&#9776; </a>
 
-			<li><a href="#life">Profile</a></li>
-			<li><a href="#edwork">Life</a></li>
-		<li><a href="#skills">Abilities</a></li>
-		<li><a href="#projects">Projects</a></li>
-		<li><a href="#contacts">Contacts</a></li>
+			<li class="dis"><a href="#life">Profile</a></li>
+			<li class="dis"><a href="#edwork">Life</a></li>
+		<li class="dis"><a href="#skills">Abilities</a></li>
+		<li class="dis"><a href="#projects">Projects</a></li>
+		<li class="dis"><a href="#contacts">Contacts</a></li>
 
 		</ul>
 		<script>
-			function myFunction() {
+			function menu() {
 				var x = document.getElementById("myTopnav");
-				if (x.className == "topnav") {
-					x.className += " responsive";
-				} else {
-					x.className = "topnav";
-				}
+				var liArr = document.getElementById("myTopnav").getElementsByTagName("li");
+				        console.log(found)
+
+				if(found==0){
+
+				for(var i = 0; i < liArr.length; i++) {
+    var parent = liArr[i].parentNode;
+
+    if(parent != null && parent.id == "myTopnav") {
+       liArr[i].style.display = "block";
+        found = 1;
+    }}
+    }else if(found==1){
+    for(var i = 0; i < liArr.length; i++) {
+    var parent = liArr[i].parentNode;
+    if(parent != null && parent.id == "myTopnav") {
+       liArr[i].style.display = "none";
+        found = 0;
+    }
+    }
+
+}
 			}
 		</script>
 
 		<script>
 		window.onscroll = function() {myFunction()};
 var navbar = document.getElementById("myTopnav");
+				       var found = 0;
 
 		var sticky = navbar.offsetTop;
 
@@ -106,7 +125,9 @@ var navbar = document.getElementById("myTopnav");
 				(mother tongue) and English (fluent).<br> I have a lot of
 				hobbies, among them there are: reading comics and books, watching
 				movies and tv-series, playing video-games and also of course
-				Programming.
+				Programming.<br>
+
+				You can find my <a href="https://drive.google.com/file/d/10yWaHgYcW7WpZp74-CVxEtsfLDLAzBSu/view?usp=sharing">Curriculum</a> here.
 			</p>
 		</div>
 	</div>
@@ -555,7 +576,7 @@ Grade: 94/110 – Thesis on: Data Science: Deep Learning vs Neural Networks
 				</span>
 			</li>
 <li>
-			<span class="ability-title">Scraping/Mining/Cleaning/Collection of Big Data</span>
+			<span class="ability-title">Mining/Scraping Big Data</span>
 				<span class="ability-score">
 
 
@@ -1702,26 +1723,50 @@ Grade: 94/110 – Thesis on: Data Science: Deep Learning vs Neural Networks
 		<div id="projects">
 		<h2 id="h2par">Projects</h2>
 			<div id="proj">
-							<p id="pdes">Here there are some of the projects i've worked on. All my projects can be retrieved on my <a href="https://github.com/fauxl">GitHub</a> account.</p>
+							<p class="pdes">Here there are some of the projects i've worked on. All my projects can be retrieved on my <a href="https://github.com/fauxl">GitHub</a> account.</p>
 
 <section class="center slider">
     <div>
-      <img alt="" src="./static/Images/tp.png">
+      <a href="https://github.com/fauxl/TripPlanner"><img alt="" src="./static/Images/tp.png"></a>
     </div>
     <div>
-      <img alt="" src="./static/Images/cp.png">
+		<a href="https://github.com/fauxl/CultureSpot"><img alt="" src="./static/Images/cp.png"></a>
     </div>
     <div>
-<img alt="" src="./static/Images/bm.png">
+		<a href="https://github.com/fauxl/BookManagment"><img alt="" src="./static/Images/bm.png"></a>
 	</div>
     <div>
-<img alt="" src="./static/Images/ex.png">
+<a href="https://github.com/fauxl/e-comix"><img alt="" src="./static/Images/ex.png"></a>
     </div>
     <div>
-<img alt="" src="./static/Images/ec.png">
+<a href="https://github.com/fauxl/EnendoreCreations"><img alt="" src="./static/Images/ec.png"></a>
     </div>
 
   </section>
+
+				</div>
+			<div id="proj2">
+							<p class="pdes">Here there are some of the projects i've worked on. All my projects can be retrieved on my <a href="https://github.com/fauxl">GitHub</a> account.</p>
+
+<section class="center2 slider">
+    <div>
+      <a href="https://github.com/fauxl/TripPlanner"><img alt="" src="./static/Images/tp.png"></a>
+    </div>
+    <div>
+		<a href="https://github.com/fauxl/CultureSpot"><img alt="" src="./static/Images/cp.png"></a>
+    </div>
+    <div>
+		<a href="https://github.com/fauxl/BookManagment"><img alt="" src="./static/Images/bm.png"></a>
+	</div>
+    <div>
+<a href="https://github.com/fauxl/e-comix"><img alt="" src="./static/Images/ex.png"></a>
+    </div>
+    <div>
+<a href="https://github.com/fauxl/EnendoreCreations"><img alt="" src="./static/Images/ec.png"></a>
+    </div>
+
+  </section>
+
 				</div>
 </div>
 
@@ -1738,6 +1783,22 @@ Grade: 94/110 – Thesis on: Data Science: Deep Learning vs Neural Networks
 
     });
 </script>
+
+
+ <script type="text/javascript">
+    $(document).on('ready', function() {
+
+      $(".center2").slick({
+        dots: true,
+        infinite: true,
+        centerMode: true,
+        slidesToShow: 1,
+        slidesToScroll: 2
+      });
+
+    });
+</script>
+
 		</div>
 </div>
 		</div>
