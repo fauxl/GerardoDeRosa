@@ -1,0 +1,138 @@
+<!doctype html>
+
+<html>
+<head>
+    <title>Enendore Creations</title>
+
+    <meta name="author" content="Katie Bouman ">
+    <meta name="keywords" content="Katie Bouman ">
+    <meta name="description" content="Katie Bouman">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu"
+          rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="static/style.css">
+    <link type="text/css" rel="stylesheet" href="static/style.css">
+  <script src="https://kit.fontawesome.com/410e5bdac4.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+    <link rel="stylesheet" type="text/css" href="static/slick.css"/>
+<link rel="stylesheet" type="text/css" href="static/slick-theme.css"/>
+
+
+<body>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+  <script type="text/javascript" src="static/slick.min.js"></script>
+<div id="contacts">
+
+<a href="#" id="i"><i class="fab fa-instagram"></i>
+    Instagram</a>
+    <a href="#" id="t"><i class="fab fa-telegram"></i>
+
+Telegram</a>
+<a href="#" id="m"><i class="far fa-envelope"></i>
+
+Mail</a>
+</div>
+
+<header>
+    <div id="title">
+    			<img alt="" id="logo" src="../static/Images/logo.png">
+    </div>
+</header>
+
+<nav id="myTopnav" class="topnav">
+    <div id="sew">
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">MENU
+        &#9776; </a>
+        <a href="#"><i class="fas fa-home"></i>
+
+ Home</a> </a>
+
+        <a href="#about"><i class="far fa-gem"></i> Collezioni</a>
+
+        <a href="#work"><i class="fas fa-phone"></i> Contatti</a><a href="#contacts"></a>
+
+
+    <script>
+			function myFunction() {
+				var x = document.getElementById("myTopnav");
+				if (x.className == "topnav") {
+					x.className += " responsive";
+				} else {
+					x.className = "topnav";
+				}
+			}
+		</script>
+</div>
+</nav>
+
+
+<div class="paragraph", id="prodotto">
+
+        <img alt="" id="prod" src="../static/Images/first.jpg">
+
+    <div id="info">
+    <h2>Nome Prodotto</h2>
+    <p id="descrizione">Katie Bouman, nata a West Lafayette il 9 Maggio 1989 è un’informatica statunitense, oggi è una professoressa associata al California Institute 
+of Technology, specializzata nelle tecniche di trattamento delle immagini. La sua ricerca si concentra sull'Imaging Computazionale.</p>
+</div>
+</div>
+
+
+<div class="paragraph", id="Vetrina">
+
+    <h2>Vetrina</h2>
+
+  <section class="regular slider">
+    <div>
+      <img src="../static/Images/first.jpg">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x300?text=2">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x300?text=3">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x300?text=4">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x300?text=5">
+    </div>
+    <div>
+      <img src="http://placehold.it/350x300?text=6">
+    </div>
+  </section>
+</div>
+
+ <script type="text/javascript">
+    $(document).on('ready', function() {
+
+     $(".regular").slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3
+      });
+
+    });
+</script>
+
+<footer>
+
+    <p>Copyright &#169; 2020 by <a href=" https://gerardoderosa.netlify.app/">FauxL</a> </p>
+</footer>
+
+</body>
+
+</html>
