@@ -1,3 +1,8 @@
+html {
+    cursor: default;
+}
+
+
 body {
 
 font-family: 'Bai Jamjuree', sans-serif;
@@ -119,7 +124,6 @@ div#projects {
 
 .colwhere {
     width: 90%;
-        display: :table-cell;
 }
 
 .det-ed {
@@ -143,10 +147,6 @@ div#projects {
 	padding-left: 4%;
 }
 
-#descrizione {
-	/* padding-left: 4%; */
-	/* padding-right: 4%; */
-}
 
 img#descrizione {
 	width: 15%;
@@ -549,6 +549,10 @@ h3{
     font-size:small;
 }
 
+html{
+    font-size:medium;
+}
+
 
 	nav a {
 		/* padding-left: 6%; */
@@ -621,12 +625,12 @@ div#secondcol {
 .col-md-6 {
     display: table-cell;
     width: 100%;
-    padding-left: 0; */
+    padding-left: 0; 
 }
 .col-md-7 {
     /* display: table-cell; */
     width: 100%;
-    padding-left: 0; */
+    padding-left: 0; 
 }
 .worked {
     margin-left: 5%;
@@ -705,12 +709,12 @@ div#secondcol {
 .col-md-6 {
     display: table-cell;
     width: 100%;
-    padding-left: 0; */
+    padding-left: 0; 
 }
 .col-md-7 {
     /* display: table-cell; */
     width: 100%;
-    padding-left: 0; */
+    padding-left: 0; 
 }
 .row {
     display: grid;
