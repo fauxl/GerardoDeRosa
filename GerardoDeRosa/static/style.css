@@ -2,6 +2,9 @@ html {
     cursor: default;
 }
 
+a#curr {
+    color: #f70000;
+}
 
 body {
 
@@ -23,17 +26,32 @@ hr {
     width: 25%;
 }
 
+#life{
+    display: table;
+}
 
-    #background {
+#descrizione {
+    display: flex;
+    justify-content: center;
+    /* align-content: center; */
+    /* width: 50%; */
+}
+
+#testo {
+    display: flex;
+    /* width: fit-content; */
+    padding: 2%;
+    justify-content: center;
+}
+
+#background {
   background: linear-gradient(#004b9233,rgb(25 25 25 / 70%)), url(../static/Images/background.jpg);
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
-
-
   background-size: cover;
   width: 100%;
-  margin-bottom: 4%;
+  /* margin-bottom: 4%; */
   padding-top: 22%;
   overflow: hidden;
   padding-bottom: 23%;
@@ -99,8 +117,8 @@ nav a {
 
 
 .container {
-    margin-left: 22%;
-    margin-right: 22%;
+    margin-left: 17%;
+    margin-right: 17%;
     margin-top: 2%;
     margin-bottom: 4%;
 }
@@ -152,7 +170,6 @@ img#descrizione {
 	width: 15%;
     padding-right: 5%;
     display: inline-block;
-    float: left;
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
@@ -244,8 +261,11 @@ img#cont {
     padding-bottom: 1%;
 }
 img#descrizione {
-    width: 16%;
-    padding-right: 5%;
+    width: 70%;
+    /* height: 50%; */
+    /* display: table-cell; */
+    /* padding-right: 5%; */
+    vertical-align: center;
 }
 strong {
     display: block;
@@ -259,7 +279,7 @@ footer {
     background-color: #797979;
     text-align: center;
 }
-#life {/* margin-top: 4%; */margin-bottom: 8%;text-decoration: none;text-decoration: none;}
+#life {/* margin-top: 4%; *//* margin-left: 25%; *//* margin-right: 25%; */margin-bottom: 5%;/* text-decoration: none; */text-decoration: none;display: flex;}
 p.social {
     font-size: larger;
      display: inline-block;
@@ -327,7 +347,7 @@ h2#h2par{
         font-size: 300%;
         font-weight: 380;
         color: #273d52;
-        margin-bottom: 2%;
+        margin-bottom: 4%;
         text-align: center;
         text-decoration: none;
 }
@@ -470,6 +490,17 @@ display:block}
     .slick-slide img {
       width: 100%;
     }
+
+
+@media screen and (max-width: 1920px) {
+	
+	img#descrizione  {
+		width: 20%;
+		align-items: center;
+		padding-right: 5%
+	}
+}
+
 @media screen and (max-width: 1285px) {
 
 img#descrizione {
@@ -503,6 +534,7 @@ h2#h2par {margin-bottom: 4%;margin-top: 8%;}
 		height: 8%;
 	}
 }
+
 
 @media screen and (max-width: 884px) {
 	aside {
@@ -554,11 +586,6 @@ html{
 }
 
 
-	nav a {
-		/* padding-left: 6%; */
-		/* padding-right: 6%; */
-		/* padding: 7% 0 7% 0%; */
-	}
 	nav {
 	border: 0px;
 	/* background-color: #797979; */
@@ -581,13 +608,7 @@ html{
     position: fixed;
 }
 
-	nav > li {
-	  /* display: block; */
-	  /* float: none; */
-	  /* width: 100%; */
-	  /* padding:0; */
-	  /* height: 80px; */
-	  }
+
 a.scroll-down{right:0;
 height:auto;
 top: 1;width:100%;}
@@ -663,10 +684,6 @@ div#secondcol {
 		padding: 0px;
 		/* padding-bottom: 25%; */
 	}
-	nav {
-		/* padding-top: 3%; */
-		/* padding-bottom: 3.5%; */
-	}
 
 	#logon {padding-top: 55%;padding-left: 10%;padding-right: 10%;padding-bottom: 70%;}
 	h1 {
@@ -738,11 +755,6 @@ display:none}
 hr {
     width: 70%;
 }
-
-#show{
-visability:hidden;
-}
-
 
 
 }
